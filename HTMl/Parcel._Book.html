@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel Book</title>
+    <script src="../CSS/Parcel-tck-book.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/Truck-Parcel-Booking.css" />
+  </head>
+  <body>
+    <div>
+      <div class="header_part">
+        <div id="icn_nm">
+          <i class="fa-solid fa-truck-fast"></i>
+          <label for="" id="comp-nm">Transportco</label>
+        </div>
+        <div class="header_top">
+          <div class="header_items">
+            <div class="header_contact">
+              <div>
+                <i
+                  class="fa-solid fa-phone-volume"
+                  style="color: rgb(74, 51, 28)"
+                ></i>
+                <span>(+91)7909633443</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>igtr5162@gmail.com</span>
+              </div>
+            </div>
+            <div class="header_contact">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span> <i class="fa-brands fa-square-x-twitter"></i></span>
+              <span> <i class="fa-brands fa-square-google-plus"></i></span>
+              <span> <i class="fa-brands fa-linkedin"></i></span>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="Final.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="#Location">Location</a></li>
+              <li>
+                <a href="../HTMl/Login_page.html" id="create-account-sub"
+                  >Create Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- it is for Phone screen -->
+      <div class="Phone_screen">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Sidebar Navbar -->
+        <nav class="navbar" id="navbar">
+          <span class="close-btn" onclick="toggleMenu()">&times;</span>
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account-sub"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header">
+          <button class="back-btn" onclick="goBack()" title="Back buttton">
+            ←
+          </button>
+          <div class="route-info">
+            <div class="location">
+              15th Battalion, Indore, Madhya Pradesh, India
+            </div>
+            <div class="arrow">→</div>
+            <div class="distance"><i class="fa-solid fa-route"></i>194 KM</div>
+            <div class="arrow">→</div>
+            <div class="location">Bhopal, Madhya Pradesh, India</div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <form
+            id="bookingForm"
+            action="../HTMl/Mobile-number.html"
+            method="get"
+          >
+            <!-- Truck Type Selection -->
+            <div class="form-group">
+              <label for="truckType">Truck Type</label>
+              <div class="dropdown">
+                <div class="dropdown-btn" id="truckDropdownBtn">
+                  <span id="selectedTruck">Select Truck</span>
+                  <i
+                    class="fa-solid fa-chevron-down dropdown-arrow"
+                    style="color: black"
+                  ></i>
+                </div>
+                <div class="dropdown-menu" id="truckDropdownMenu">
+                  <div class="dropdown-item" data-value="ace-dost-pickup">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//tata%20ace.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">
+                        ACE / DOST / PICKUP (1.5 TON)
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="eicher-14ft">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//eicher%2014ft.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+
+                    <div class="truck-info">
+                      <div class="truck-name">EICHER 14FT (3.5 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="eicher-17ft">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//eicher%2014ft.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+
+                    <div class="truck-info">
+                      <div class="truck-name">EICHER 17FT (5 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="eicher-19ft">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//closed%20body.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">EICHER 19FT (7 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="container-20ft">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//truck.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+
+                    <div class="truck-info">
+                      <div class="truck-name">20FT CONTAINER (6.5 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="eicher-pro-22ft">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//CONTAINER%2032FT.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">EICHER PRO 22FT (10 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="container-32ft-7ton">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('http://truckguru.co.in/web/uploads//taurus.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">32FT CONTAINER (7/8 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="container-32ft-15ton">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//40ft.png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">32FT CONTAINER (15 TON)</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="container-32ft-18ton">
+                    <div
+                      class="truck-icon"
+                      style="
+                        background-image: url('https://truckguru.co.in/web/uploads//parcel%20(1).png');
+                        width: 50px;
+                        height: 35px;
+                      "
+                    ></div>
+                    <div class="truck-info">
+                      <div class="truck-name">32FT CONTAINER (18 TON)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goods Type Selection -->
+            <div class="form-group">
+              <label>Select Goods Type</label>
+              <div class="goods-grid">
+                <div class="goods-option" data-goods="household">
+                  <div class="goods-icon">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="goods-title">Household Items</div>
+                </div>
+                <div class="goods-option" data-goods="electronics">
+                  <div class="goods-icon">
+                    <i class="fas fa-tv"></i>
+                  </div>
+                  <div class="goods-title">Electronics</div>
+                </div>
+                <div class="goods-option" data-goods="furniture">
+                  <div class="goods-icon">
+                    <i class="fas fa-couch"></i>
+                  </div>
+                  <div class="goods-title">Furniture</div>
+                </div>
+                <div class="goods-option" data-goods="documents">
+                  <div class="goods-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <div class="goods-title">Documents</div>
+                </div>
+                <div class="goods-option" data-goods="fragile">
+                  <div class="goods-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="goods-title">Fragile Items</div>
+                </div>
+                <div class="goods-option" data-goods="other">
+                  <div class="goods-icon">
+                    <i class="fas fa-box"></i>
+                  </div>
+                  <div class="goods-title">Other</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="select-wrapper">
+              <label for="loadSelect" class="select-label"
+                >Choose Load Type</label
+              >
+              <select id="loadSelect" name="loadType" required>
+                <option value="" disabled selected>Select Load Type</option>
+                <option value="full">Full Load</option>
+                <option value="half">Half Load</option>
+              </select>
+            </div>
+
+            <!-- Parcel Number -->
+            <div class="form-group">
+              <label for="parcelNumber"> Enter Parcel Number</label>
+              <input
+                type="number"
+                id="parcelNumber"
+                class="form-input"
+                placeholder="Enter parcel number"
+                required
+              />
+            </div>
+
+            <!-- Next Button -->
+            <button type="submit" class="next-btn" id="nextBtn">Next</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Transportz. All rights reserved. | Designed with ❤️ for
+          better transportation
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

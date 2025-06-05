@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Transportz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="../CSS/About.css">
+  
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header_part">
+      <div id="icn_nm">
+          <i class="fa-solid fa-truck-fast"></i>
+        <label id="comp-nm">Transportz</label>
+      </div>
+
+      <!-- Desktop Top Bar -->
+      <div class="header_top">
+        <div class="header_items">
+          <!-- Contact Info -->
+          <div class="header_contact">
+            <div>
+              <i
+                class="fa-solid fa-phone-volume"
+                style="color: rgb(74, 51, 28)"
+              ></i>
+              <span>(+91)7909633443</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <span>igtr5162@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="header_contact">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-square-x-twitter"></i></span>
+            <span><i class="fa-brands fa-square-google-plus"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="links">
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile View Sidebar Navigation -->
+    <div class="Phone_screen">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Sidebar Navbar -->
+      <nav class="navbar" id="navbar">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+          <li><a href="Final.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="../HTMl/Login_page.html" id="create-account-sub"
+              >Create Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-container">
+      <!-- Hero Section -->
+      <div class="about-hero">
+        <h1>About Transportz</h1>
+        <p class="tagline">
+          Madhya Pradesh's Premier Transport & Logistics Partner
+        </p>
+        <p class="description">
+          At <strong>Transportz</strong>, we're not just moving packages – we're
+          connecting communities, empowering businesses, and keeping Madhya
+          Pradesh's heartbeat strong. Born from the rich soil of MP, we
+          understand every route, every challenge, and every opportunity that
+          makes our state unique.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-motorcycle service-icon"></i>
+          <h3>Swift Two-Wheeler Delivery</h3>
+          <p>
+            Lightning-fast local deliveries across MP cities. From urgent
+            documents to essential supplies, our two-wheeler fleet navigates
+            through traffic and narrow lanes with unmatched agility. Perfect for
+            same-day delivery within city limits.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-truck service-icon"></i>
+          <h3>Heavy-Duty Truck Transport</h3>
+          <p>
+            Robust logistics solutions for bulk goods and long-distance
+            transport across Madhya Pradesh. Our fleet of well-maintained trucks
+            ensures your cargo reaches its destination safely, whether it's
+            industrial equipment or commercial goods.
+          </p>
+        </div>
+      </div>
+
+      <!-- Statistics Section -->
+      <div class="stats-section">
+        <h2  id="stats-section-header">Our Impact Across MP</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h4>50+</h4>
+            <p>Cities Covered</p>
+          </div>
+          <div class="stat-item">
+            <h4>10,000+</h4>
+            <p>Successful Deliveries</p>
+          </div>
+          <div class="stat-item">
+            <h4>500+</h4>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-item">
+            <h4>24/7</h4>
+            <p>Customer Support</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MP Coverage Section -->
+      <div class="mp-coverage">
+        <h2>Covering Every Corner of Madhya Pradesh</h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+          "
+        >
+          From the bustling commercial hubs to the serene rural landscapes, we
+          deliver across all major cities and districts of MP with local
+          expertise that only comes from being truly rooted in this beautiful
+          state.
+        </p>
+
+        <div class="cities-grid">
+          <div class="city-badge">Indore</div>
+          <div class="city-badge">Bhopal</div>
+          <div class="city-badge">Jabalpur</div>
+          <div class="city-badge">Gwalior</div>
+          <div class="city-badge">Ujjain</div>
+          <div class="city-badge">Sagar</div>
+          <div class="city-badge">Dewas</div>
+          <div class="city-badge">Satna</div>
+          <div class="city-badge">Ratlam</div>
+          <div class="city-badge">Rewa</div>
+          <div class="city-badge">Murwara</div>
+          <div class="city-badge">Singrauli</div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us Section -->
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-clock service-icon"></i>
+          <h3>Punctuality Promise</h3>
+          <p>
+            Time is money, and we respect both. Our advanced route optimization
+            and real-time tracking ensure your deliveries arrive exactly when
+            promised, every single time.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-rupee-sign service-icon"></i>
+          <h3>Transparent Pricing</h3>
+          <p>
+            No hidden charges, no surprise fees. Our competitive rates are
+            upfront and honest, making quality logistics accessible to
+            businesses of all sizes across Madhya Pradesh.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-shield-halved service-icon"></i>
+          <h3>Secure & Insured</h3>
+          <p>
+            Your trust is our foundation. Every package is handled with care and
+            backed by comprehensive insurance, giving you complete peace of mind
+            throughout the journey.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-headset service-icon"></i>
+          <h3>Local Expertise</h3>
+          <p>
+            Born and raised in MP, we know every street, every shortcut, and
+            every seasonal challenge. Our local knowledge translates to smarter
+            routes and faster deliveries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-section">
+        <h2
+          style="
+            font-family: 'Lobster', cursive;
+            color: #5a3a1c;
+            margin-bottom: 1rem;
+          "
+        >
+          Ready to Experience the Transportz Difference?
+        </h2>
+        <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem">
+          Join hundreds of businesses and individuals who trust us with their
+          most important deliveries. Whether it's a single package or a full
+          truckload, we're here to serve Madhya Pradesh with pride.
+        </p>
+        <a href="#" class="cta-button">
+          <i class="fa-solid fa-phone" style="margin-right: 10px"></i>
+          Get Quote Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 Transportz. All rights reserved. | Designed with ❤️ for
+        better transportation across Madhya Pradesh
+      </p>
+    </div>
+
+
+    <script src="../CSS/About.js"></script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Wheeler Parcel Booking</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/Two_wheeler_booking.css" />
+  </head>
+  <body>
+    <div>
+      <div class="header_part">
+        <div id="icn_nm">
+          <i class="fa-solid fa-motorcycle"></i>
+          <label for="" id="comp-nm">Transportco</label>
+        </div>
+        <div class="header_top">
+          <div class="header_items">
+            <div class="header_contact">
+              <div>
+                <i
+                  class="fa-solid fa-phone-volume"
+                  style="color: rgb(74, 51, 28)"
+                ></i>
+                <span>(+91)7909633443</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>igtr5162@gmail.com</span>
+              </div>
+            </div>
+            <div class="header_contact">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span> <i class="fa-brands fa-square-x-twitter"></i></span>
+              <span> <i class="fa-brands fa-square-google-plus"></i></span>
+              <span> <i class="fa-brands fa-linkedin"></i></span>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="Final.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="#Location">Location</a></li>
+              <li>
+                <a href="../HTMl/Login_page.html" id="create-account-sub"
+                  >Create Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- it is for Phone screen -->
+      <div class="Phone_screen">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Sidebar Navbar -->
+        <nav class="navbar" id="navbar">
+          <span class="close-btn" onclick="toggleMenu()">&times;</span>
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account-sub"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header">
+          <button class="back-btn" onclick="goBack()" title="Back button">
+            ←
+          </button>
+          <div class="route-info">
+            <div class="location">
+              15th Battalion, Indore, Madhya Pradesh, India
+            </div>
+            <div class="arrow">→</div>
+            <div class="distance"><i class="fa-solid fa-route"></i>194 KM</div>
+            <div class="arrow">→</div>
+            <div class="location">Bhopal, Madhya Pradesh, India</div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <form
+            id="bookingForm"
+            action="../HTMl/Mobile-number-2.html"
+            method="get"
+          >
+            <!-- Two Wheeler Type Selection -->
+            <div class="form-group">
+              <label for="vehicleType">Two Wheeler Type</label>
+              <div class="dropdown">
+                <div class="dropdown-btn" id="truckDropdownBtn">
+                  <span id="selectedTruck">Select Two Wheeler</span>
+                  <i
+                    class="fa-solid fa-chevron-down dropdown-arrow"
+                    style="color: black"
+                  ></i>
+                </div>
+                <div class="dropdown-menu" id="truckDropdownMenu">
+                  <div class="dropdown-item" data-value="bike-standard">
+                    <div class="vehicle-icon">
+                      <img
+                        src="../HTMl/Imga/bike-remove-2.png"
+                        alt=""
+                        style="width: 50px; height: 40px"
+                      />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-name">
+                        Standard Bike (Up to 15 KG)
+                      </div>
+                      <div class="vehicle-capacity">
+                        Fast delivery for small parcels
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="bike-heavy">
+                    <div class="vehicle-icon">
+                      <img
+                        src="../HTMl/Imga/transport-Two-Wheelers -remov-background-3.png"
+                        alt=""
+                        style="width: 50px; height: 40px"
+                      />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-name">Heavy Bike (Up to 25 KG)</div>
+                      <div class="vehicle-capacity">
+                        For medium-sized packages
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dropdown-item" data-value="scooter-light">
+                    <div class="vehicle-icon">
+                      <img
+                        src="../HTMl/Imga/transport-Two-Wheelers -remov-background-2.png"
+                        alt=""
+                        style="width: 50px; height: 40px"
+                      />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-name">
+                        Light Scooter (Up to 10 KG)
+                      </div>
+                      <div class="vehicle-capacity">
+                        Quick delivery for documents
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="electric-bike">
+                    <div class="vehicle-icon">
+                      <img
+                        src="https://static.vecteezy.com/system/resources/previews/024/819/245/non_2x/electric-motorbike-electric-bike-e-bike-e-motorbike-electric-vehicle-e-vehicle-transparent-background-ai-generated-png.png"
+                        alt=""
+                        style="width: 50px; height: 40px"
+                      />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-name">
+                        Electric Bike (Up to 20 KG)
+                      </div>
+                      <div class="vehicle-capacity">Eco-friendly delivery</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-item" data-value="delivery-bike">
+                    <div class="vehicle-icon">
+                      <img
+                        src="../HTMl/Imga/two-wheelers-remover-3.png"
+                        alt=""
+                        style="width: 50px; height: 40px"
+                      />
+                    </div>
+                    <div class="vehicle-info">
+                      <div class="vehicle-name">
+                        Delivery Bike with Box (Up to 30 KG)
+                      </div>
+                      <div class="vehicle-capacity">
+                        Large capacity with secure box
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Parcel Type Selection -->
+            <div class="form-group">
+              <label>Select Parcel Type</label>
+              <div class="goods-grid">
+                <div class="goods-option" data-goods="documents">
+                  <div class="goods-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <div class="goods-title">Documents</div>
+                </div>
+                <div class="goods-option" data-goods="food">
+                  <div class="goods-icon">
+                    <i class="fas fa-utensils"></i>
+                  </div>
+                  <div class="goods-title">Food Items</div>
+                </div>
+                <div class="goods-option" data-goods="medicine">
+                  <div class="goods-icon">
+                    <i class="fas fa-pills"></i>
+                  </div>
+                  <div class="goods-title">Medicine</div>
+                </div>
+                <div class="goods-option" data-goods="electronics">
+                  <div class="goods-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <div class="goods-title">Small Electronics</div>
+                </div>
+                <div class="goods-option" data-goods="clothing">
+                  <div class="goods-icon">
+                    <i class="fas fa-tshirt"></i>
+                  </div>
+                  <div class="goods-title">Clothing</div>
+                </div>
+                <div class="goods-option" data-goods="fragile">
+                  <div class="goods-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="goods-title">Fragile Items</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="select-wrapper">
+              <label for="loadSelect" class="select-label"
+                >Choose Delivery Priority</label
+              >
+              <select id="loadSelect" name="loadType" required>
+                <option value="" disabled selected>Select Priority</option>
+                <option value="express">Express Delivery (Same Day)</option>
+                <option value="standard">Standard Delivery (Next Day)</option>
+                <option value="economy">Economy Delivery (2-3 Days)</option>
+              </select>
+            </div>
+
+            <!-- Parcel Number -->
+            <div class="form-group">
+              <label for="parcelNumber">Enter Parcel Weight (KG)</label>
+              <input
+                type="number"
+                id="parcelNumber"
+                class="form-input"
+                placeholder="Enter parcel weight in KG"
+                min="0.1"
+                max="30"
+                step="0.1"
+                required
+              />
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+              <label for="additionalNotes">Enter Area Pin Code</label>
+              <input
+                type="number"
+                id="additionalNotes"
+                class="form-input"
+                placeholder="Enter Area Pin Code"
+              />
+            </div>
+
+            <!-- Next Button -->
+            <button type="submit" class="next-btn" id="nextBtn">
+              Book Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 SpeedyDelivery. All rights reserved. | Designed with ❤️
+          for faster parcel delivery
+        </p>
+      </div>
+    </div>
+
+    <script src="../CSS/Parcel-tw-book.js"></script>
+  </body>
+</html>

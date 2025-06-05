@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truck Booking System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+
+    <link rel="stylesheet" href="../CSS/Truck.css" />
+  </head>
+  <body>
+    <div>
+      <div class="header_part">
+        <div id="icn_nm">
+          <i class="fa-solid fa-motorcycle"></i>
+          <label for="" id="comp-nm">Transportco</label>
+        </div>
+        <div class="header_top">
+          <div class="header_items">
+            <div class="header_contact">
+              <div>
+                <i
+                  class="fa-solid fa-phone-volume"
+                  style="color: rgb(74, 51, 28)"
+                ></i>
+                <span>(+91)7909633443</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>igtr5162@gmail.com</span>
+              </div>
+            </div>
+            <div class="header_contact">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span> <i class="fa-brands fa-square-x-twitter"></i></span>
+              <span> <i class="fa-brands fa-square-google-plus"></i></span>
+              <span> <i class="fa-brands fa-linkedin"></i></span>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="Final.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="#Location">Location</a></li>
+              <li>
+                <a href="../HTMl/Login_page.html" id="create-account"
+                  >Create Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- it is for Phone screen -->
+      <div class="Phone_screen">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Sidebar Navbar -->
+        <nav class="navbar" id="navbar">
+          <span class="close-btn" onclick="toggleMenu()">&times;</span>
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account-sub"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <!-- <div class="overlap-img">
+          <img
+            src="./HTMl/Imga/Wallpaper_IAA_Range_desktop.jpg "
+            alt=""
+            id="back_img"
+          /> 
+          <div class="overlap-txt">
+            <h1 style="color: #ac6a00;">  Transportz </h1>
+            <h2>Truck Booking System</h2>
+          </div>
+        </div> -->
+
+        <!-- Slideshow Section -->
+        <div class="overlap-img">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img
+              src="../HTMl/Imga/Wallpaper_IAA_Range_desktop.jpg"
+              alt="Truck Transport"
+              id="back_img"
+            />
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img
+              src="https://www.tradetrucks.com.au/wp-content/uploads/2023/07/DAF-New-CF-Construction-Euro-6-07-scaled.jpg "
+              alt="Logistics"
+              id="back_img"
+            />
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img
+              src="https://i0.wp.com/picjumbo.com/wp-content/uploads/european-truck-on-the-road-free-photo.jpg?w=2210&quality=70"
+              alt="Delivery Service"
+              id="back_img"
+            />
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide">
+            <img
+              src="https://rare-gallery.com/mocahbig/77622-TruckVolvo-HD-Wallpaper.jpg"
+              alt="Heavy Transport"
+              id="back_img"
+            />
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="slide">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+              alt="Freight Truck"
+              id="back_img"
+            />
+          </div>
+
+          <!-- Your Original Text Overlay -->
+          <div class="overlap-txt">
+            <h1 style="color: #ac6a00">Transportz</h1>
+            <h2>Two Wheelers Booking System</h2>
+          </div>
+
+          <!-- Navigation Dots
+        <div class="slide-nav">
+            <span class="nav-dot active" onclick="currentSlide(1)"></span>
+            <span class="nav-dot" onclick="currentSlide(2)"></span>
+            <span class="nav-dot" onclick="currentSlide(3)"></span>
+            <span class="nav-dot" onclick="currentSlide(4)"></span>
+            <span class="nav-dot" onclick="currentSlide(5)"></span>
+        </div> -->
+        </div>
+        <div class="Booking_page">
+          <div>
+            <h1 id="hadding-txt">Online Two Wheelers Booking Made Easy</h1>
+          </div>
+          <div class="booking-ft">
+            <form
+              action="../HTMl/Company_logo.html"
+              method="post"
+              class="formpage"
+              onsubmit="redirectToBooking(event)"
+            >
+              <div class="form-fill">
+                <h2>Book Two Wheelers</h2>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Pick Up Indore City Location"
+                    id="pickup-input"
+                    readonly
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Drop Indore City Location"
+                    id="drop-input"
+                    readonly
+                  />
+                </div>
+                <div>
+                  <button type="submit" id="locations-fill-btn">
+                    Check Fare
+                  </button>
+                </div>
+              </div>
+            </form>
+            <img
+              src="../HTMl/Imga/two-wheelers-remover-3.png"
+              alt=""
+              id="in_img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="locationModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header" id="modal-header">
+            <span id="modal-title">Select Location</span>
+            <span class="close" id="closeModal">&times;</span>
+          </div>
+          <div class="modal-body">
+            <input
+              type="text"
+              class="search-box"
+              id="searchBox"
+              placeholder="Search locations..."
+            />
+            <ul class="location-list" id="locationList">
+              <li
+                class="location-item"
+                data-location=" vijay nagar indore, Madhya Pradesh, India"
+              >
+                vijay nagar indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="rajendra nagar indore Madhya Pradesh, India"
+              >
+                rajendra nagar indore Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location=" Nayapura Main Road Snehlata Ganj, Indore, Madhya Pradesh, India"
+              >
+                Nayapura Main Road Snehlata Ganj, Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Niranjanpur A B Road, Indore, Madhya Pradesh, India"
+              >
+                Niranjanpur A B Road, Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Scheme 78, Vijay Nagar,Indore, Madhya Pradesh,India"
+              >
+                Scheme 78, Vijay Nagar,Indore, Madhya Pradesh,India
+              </li>
+              <li
+                class="location-item"
+                data-location="Dewas Naka,Indore,Madhya Pradesh, India"
+              >
+                Dewas Naka,Indore,Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Sarafa Bazaar,Indore,Madhya Pradesh, India"
+              >
+                Sarafa Bazaar,Indore,Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Rajwada Indore,Madhya Pradesh, India"
+              >
+                Rajwada Indore,Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="AB Bypass Road,Indore, Madhya Pradesh, India"
+              >
+                AB Bypass Road,Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location=" Super Corridor,Indore, Madhya Pradesh, India"
+              >
+                Super Corridor,Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Chappan Dukan,Indore, Madhya Pradesh, India"
+              >
+                Chappan Dukan,Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="bhawarkua Indore, Madhya Pradesh, India"
+              >
+                bhawarkua Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Azad Nagar, Indore, Madhya Pradesh, India"
+              >
+                Azad Nagar, Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Chawni Indore, Madhya Pradesh, India"
+              >
+                Chawni Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location=" New Palasia,Indore, Madhya Pradesh, India"
+              >
+                New Palasia,Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Geeta Bhavan, Indore,Madhya Pradesh, India"
+              >
+                Geeta Bhavan, Indore,Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location=" Sukhliya, Indore, Madhya Pradesh, India"
+              >
+                Sukhliya, Indore, Madhya Pradesh, India
+              </li>
+              <li
+                class="location-item"
+                data-location="Shivaji Nagar Indore, Madhya Pradesh, India"
+              >
+                Shivaji Nagar Indore, Madhya Pradesh, India
+              </li>
+            </ul>
+            <div class="no-results" id="noResults">
+              No locations found matching your search.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1>
+          Transportz– A leading player in the transport industry to quickly move
+          your goods anywhere, anytime!
+        </h1>
+        <p>
+          Let’s us handle your transport needs!.<br />
+          Do you have something big you need to move quickly? Are you struggling
+          to find cost-effective trucking solutions for your business or
+          household goods shifting? Are you in need of a dependable transport
+          partner who can handle your day-to-day transport needs? Then, we can
+          be your perfect choice!
+        </p>
+
+        <p>
+          Moving your goods safely & securely is our specialty. Transportz is
+          renowned for its excellent transport service, specialized staff and
+          state-of-the-art infrastructure. With our strong commitment to quality
+          and great professionalism, we have successfully positioned ourselves
+          as an industry leader, offering best-in-class transport and logistics
+          solutions to meet the needs of our commercial as well as residential
+          clients.
+        </p>
+
+        <div class="row">
+          <div class="column">
+            <h3>Now transport anything anywhere with us, See how :-</h3>
+            <ul>
+              <li>
+                1. Download our mobile app from the Android & iOS App Store
+              </li>
+              <li>2. Sign-up by filling up the form</li>
+              <li>3. Check the truck availability near your location</li>
+              <li>4. And finally, book the truck of your choice.</li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3>
+              We are a one-stop solution for all your transport & logistics
+              needs!
+            </h3>
+            <p>
+              Our modern and personalized logistics solutions help enterprises
+              in day-to-day deliveries, bulk deliveries, cargo transport,
+              business couriers, last-mile delivery and so on. Our loyal
+              customers across multiple cities across the country serve as a
+              testament to our top-notch transport service and ever-expanding
+              presence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+
+      <footer class="footer-container">
+        <div class="footer-wave"></div>
+
+        <div class="footer-content">
+          <div class="company-section">
+            <div class="logo-container">
+              <div class="logo-icon">
+                <i
+                  class="fas fa-truck-fast"
+                  style="font-size: 24px; color: aliceblue"
+                ></i>
+              </div>
+              <h2 class="company-name">Transportz</h2>
+            </div>
+
+            <p class="company-description">
+              Revolutionizing transportation with our cutting-edge online
+              booking system. Experience seamless travel with multiple transport
+              options including buses, taxis, and premium private vehicles. Your
+              journey, our priority.
+            </p>
+
+            <div class="stats-section">
+              <div class="stat-item">
+                <span class="stat-number" data-target="50000">0</span>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="25">0</span>
+                <div class="stat-label">Cities Covered</div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="99">0</span>
+                <div class="stat-label">Success Rate %</div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/tranport.co?igsh=Nno0YzZjOXU2cDdw" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="section-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#booking">Book Now</a></li>
+              <li><a href="Blog.html">Our Blog</a></li>
+              <li><a href="#Location">Location</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="section-title">Support</h3>
+            <ul class="footer-links">
+              <li><a href="#help">Help Center</a></li>
+              <li><a href="#safety">Safety Guidelines</a></li>
+              <li><a href="#terms">Terms of Service</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#careers">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="section-title">Our Cities</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#indore" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Indore
+                </a>
+              </li>
+              <li>
+                <a href="#ujjain" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Ujjain
+                </a>
+              </li>
+              <li>
+                <a href="#dewas" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Dewas
+                </a>
+              </li>
+              <li>
+                <a href="#pachmarhi" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Pachmarhi
+                </a>
+              </li>
+              <li>
+                <a href="#gwalior" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Gwalior
+                </a>
+              </li>
+              <li>
+                <a href="#jabalpur" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Jabalpur
+                </a>
+              </li>
+              <li>
+                <a href="#rewa" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Rewa
+                </a>
+              </li>
+              <li>
+                <a href="#bhopal" class="city-link">
+                  <!-- <i class="fas fa-map-marker-alt city-icon"></i> -->
+                  Bhopal
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-sectio contact-section">
+            <h3 class="section-title">Contact Us</h3>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">Our Address</div>
+                  <div class="contact-value">
+                    176 W Street, New York<br />NY 10014, United States
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">Phone Number</div>
+                  <div class="contact-value">
+                    +1 (555) 123-4567<br />+1 (555) 987-6543
+                  </div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i
+                    class="fas fa-envelope"
+                    style="color: aliceblue; font-size: 14px"
+                  ></i>
+                </div>
+                <div class="contact-text">
+                  <div class="contact-label">Email Address</div>
+                  <div class="contact-value">
+                    support@transportz.com<br />info@transportz.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Transportz. All rights reserved. | Designed with ❤️ for
+            better transportation
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../CSS/Two-Wheelers.js"></script>
+  </body>
+</html>

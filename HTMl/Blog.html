@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+    <link rel="stylesheet" href="../CSS/About.css" />
+    <link rel="stylesheet" href="../CSS/Blog.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="header_part">
+      <div id="icn_nm">
+        <i class="fa-solid fa-truck-fast"></i>
+        <label id="comp-nm">Transportco</label>
+      </div>
+
+      <!-- Desktop Top Bar -->
+      <div class="header_top">
+        <div class="header_items">
+          <!-- Contact Info -->
+          <div class="header_contact">
+            <div>
+              <i
+                class="fa-solid fa-phone-volume"
+                style="color: rgb(74, 51, 28)"
+              ></i>
+              <span>(+91)7909633443</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <span>igtr5162@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="header_contact">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-square-x-twitter"></i></span>
+            <span><i class="fa-brands fa-square-google-plus"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="links">
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Location</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile View Sidebar Navigation -->
+    <div class="Phone_screen">
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Sidebar Navbar -->
+      <nav class="navbar" id="navbar">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+          <li><a href="Final.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="#">Location</a></li>
+          <li>
+            <a href="../HTMl/Login_page.html" id="create-account-sub"
+              >Create Account</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Blog Section -->
+    <section class="blog-section">
+      <div class="blog-header">
+        <h2 class="blog-title">MY BLOG</h2>
+        <p class="blog-subtitle">
+          Discover insights, tips, and stories from the world of transportation
+          and logistics across Madhya Pradesh
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://mehtatransportcorporations.com/upload/1743072591927.jpeg');
+            "
+          >
+            <div class="blog-category">Transportation</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> June 1, 2025</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <h3 class="blog-card-title">
+              How To Revolutionize Your Transport Business
+            </h3>
+            <p class="blog-excerpt">
+              Discover how modern logistics and smart transportation solutions
+              can transform your business operations and boost efficiency across
+              Madhya Pradesh.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://shipeazi.com/wp-content/uploads/A-detailed-illustration-of-a-logistics-preparation-scene-showing-a-worker-carefully-packing-goods-in-sturdy-boxes-with-cushioning-materials-labeling.webp');
+            "
+          >
+            <div class="blog-category">Technology</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> May 28, 2025</span>
+              <span><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <h3 class="blog-card-title">Smart Logistics: The Future is Here</h3>
+            <p class="blog-excerpt">
+              Explore how AI and IoT technologies are reshaping the
+              transportation industry and what it means for businesses in 2025.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://as1.ftcdn.net/jpg/01/97/43/52/1000_F_197435292_mXEDjQK2dIufYSh63o424h49Ww2zT246.jpg');
+            "
+          >
+            <div class="blog-category">Business</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> May 25, 2025</span>
+              <span><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <h3 class="blog-card-title">
+              Empowering Local Businesses Through Transport
+            </h3>
+            <p class="blog-excerpt">
+              Learn how reliable transportation services help small and medium
+              businesses compete in larger markets and achieve sustainable
+              growth.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://assets.designhill.com/design-blog/wp-content/uploads/2017/07/Step-By-Step-Guide-To-Promote-A-Transportation-Business.jpg');
+            "
+          >
+            <div class="blog-category">Tips</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> May 22, 2025</span>
+              <span><i class="fas fa-clock"></i> 3 min read</span>
+            </div>
+            <h3 class="blog-card-title">
+              7 Essential Tips for Choosing Transport Services
+            </h3>
+            <p class="blog-excerpt">
+              A comprehensive guide to selecting the right transportation
+              partner for your business needs and ensuring reliable service
+              delivery.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://blog.anderinger.com/hubfs/Blogs/freight-workers-together.jpg');
+            "
+          >
+            <div class="blog-category">Sustainability</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> May 20, 2025</span>
+              <span><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <h3 class="blog-card-title">
+              Green Transportation for a Better Tomorrow
+            </h3>
+            <p class="blog-excerpt">
+              Discover our commitment to sustainable transportation solutions
+              and how we're reducing our carbon footprint while maintaining
+              service excellence.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="blog-card">
+          <div
+            class="blog-image"
+            style="
+              background-image: url('https://www.dckap.com/wp-content/uploads/2024/03/D-Blog-3-1.png');
+            "
+          >
+            <div class="blog-category">Innovation</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> May 18, 2025</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <h3 class="blog-card-title">Digital Transformation in Logistics</h3>
+            <p class="blog-excerpt">
+              How digital tools and platforms are revolutionizing the logistics
+              industry and creating new opportunities for businesses.
+            </p>
+            <button class="read-more-btn">
+              Read More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="newsletter">
+        <h3>Stay Updated</h3>
+        <p>
+          Subscribe to our newsletter for the latest insights and updates from
+          the world of transportation.
+        </p>
+        <form class="newsletter-form">
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-bottom">
+      <p>
+        &copy; 2025 Transportz. All rights reserved. | Designed with ❤️ for
+        better transportation across Madhya Pradesh
+      </p>
+    </footer>
+  
+    <script src="../CSS/Blog.js"></script>
+  </body>
+</html>

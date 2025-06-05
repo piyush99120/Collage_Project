@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportz</title>
+    <script src="../CSS/Parcel-tck-book.js" defer></script>
+    <link rel="stylesheet" href="../CSS/Mobile.number-2.css" />
+
+    <link rel="stylesheet" href="../CSS/Truck-Parcel-Booking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- Header Section -->
+      <div class="header_part">
+        <div id="icn_nm">
+          <i class="fa-solid fa-motorcycle"></i>
+          <label id="comp-nm">Transportco</label>
+        </div>
+
+        <!-- Desktop Top Bar -->
+        <div class="header_top">
+          <div class="header_items">
+            <!-- Contact Info -->
+            <div class="header_contact">
+              <div>
+                <i
+                  class="fa-solid fa-phone-volume"
+                  style="color: rgb(74, 51, 28)"
+                ></i>
+                <span>(+91)7909633443</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>igtr5162@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="header_contact">
+              <span><i class="fa-brands fa-facebook"></i></span>
+              <span><i class="fa-brands fa-square-x-twitter"></i></span>
+              <span><i class="fa-brands fa-square-google-plus"></i></span>
+              <span><i class="fa-brands fa-linkedin"></i></span>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="links">
+            <ul>
+              <li><a href="Final.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="#Location">Location</a></li>
+              <li>
+                <a href="../HTMl/Login_page.html" id="create-account"
+                  >Create Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View Sidebar Navigation -->
+      <div class="Phone_screen">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Sidebar Navbar -->
+        <nav class="navbar" id="navbar">
+          <span class="close-btn" onclick="toggleMenu()">&times;</span>
+          <ul>
+            <li><a href="Final.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li>
+              <a href="../HTMl/Login_page.html" id="create-account-sub"
+                >Create Account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Route Info Container -->
+      <div class="container">
+        <div class="header">
+          <button class="back-btn" onclick="goBack()" title="Back button">
+            ←
+          </button>
+          <div class="route-info">
+            <div class="location">
+              15th Battalion, Indore, Madhya Pradesh, India
+            </div>
+            <div class="arrow">→</div>
+
+            <div class="distance"><i class="fa-solid fa-route"></i> 194 KM</div>
+            <div class="arrow">→</div>
+            <div class="location">Bhopal, Madhya Pradesh, India</div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Number Section -->
+      <div class="Number-section" id="mobileSection">
+        <form id="mobileForm">
+          <div class="number-fill">
+            <div>
+              <label for="mobileNumber">Enter Your Mobile Number</label>
+            </div>
+            <div>
+              <input
+                type="number"
+                id="mobileNumber"
+                placeholder="91+ Mobile Number"
+              />
+              <div class="error-message" id="mobileError"></div>
+            </div>
+            <div class="number-btn">
+              <button type="submit">Next</button>
+            </div>
+          </div>
+        </form>
+        <div class="text-info">
+          <p>By continuing, you agree to our</p>
+          <p><span>Terms of Service</span> & <span>Privacy Policy</span></p>
+        </div>
+      </div>
+
+      <!-- OTP Section -->
+      <div class="otp-section" id="otpSection">
+        <form id="otpForm">
+          <div class="otp-fill">
+            <div class="otp-info">
+              <p>OTP sent to: <span id="displayMobile"></span></p>
+              <p class="generated-otp">
+                Your OTP: <span id="generatedOtp"></span>
+              </p>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem">
+                (In real application, OTP would be sent via SMS)
+              </p>
+            </div>
+            <div>
+              <label for="otpInput">Enter 6-digit OTP</label>
+            </div>
+            <div>
+              <input
+                type="number"
+                id="otpInput"
+                placeholder="Enter OTP"
+                maxlength="6"
+              />
+              <div class="error-message" id="otpError"></div>
+              <div class="success-message" id="otpSuccess"></div>
+            </div>
+            <div class="otp-btn">
+              <button
+                type="button"
+                class="back-to-mobile"
+                onclick="backToMobile()"
+              >
+                Back
+              </button>
+              <button type="submit">Verify</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="Booking-Done" style="display: none" id="Booking-Done-hai">
+        <div class="Booking-Done-header">
+          <h2>Your Booking is Almost Done</h2>
+        </div>
+        <div class="Table-form">
+          <div class="booking-info">
+            <div>
+              <p>Name</p>
+              <p><span>Virat Kohli</span></p>
+            </div>
+            <div>
+              <p>Email</p>
+              <p><span>RCB@gmail.com</span></p>
+            </div>
+            <div>
+              <p>GOODS TYPE</p>
+              <p><span>Medicine</span></p>
+            </div>
+            <div>
+              <p>Area Pin Code</p>
+              <p><span>462001</span></p>
+            </div>
+            <div>
+              <p>Customer Number</p>
+              <p><span>7898830235</span></p>
+            </div>
+            <div>
+              <p>Date of Booking</p>
+              <p><span>03-07-2025</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="Booking-Done-info">
+          <img
+            src="../HTMl/Imga/bike-remove-2.png"
+            width="50px"
+            height="50px"
+            alt=""
+          />
+          <div>
+            <p id="truck-name">EICHER 14FT (3.5 TON)</p>
+            <p id="estimated-price">
+              Estimated Price: <span>₹2000 - ₹2500</span>
+            </p>
+          </div>
+        </div>
+        <div class="booking-btn">
+          <button >Confirm Booking</button>
+          <button id="back-btn" onclick="goBack()">Go Back</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="margin-top: 11.7rem">
+        <p>
+          &copy; 2025 Transportz. All rights reserved. | Designed with ❤️ for
+          better transportation
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

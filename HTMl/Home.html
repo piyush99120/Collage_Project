@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="/CSS/Form.css">
+    <link rel="stylesheet" href="/CSS/Service-set.css">
+    <link rel="stylesheet" href="/CSS/ourprocess.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/Allhour.css">
+    <link rel="stylesheet" href="/CSS/Footer.css">
+
+</head>
+
+<body>
+    <div id="first_img">
+        <img src="../HTMl/Imga/Wallpaper_IAA_Range_desktop.jpg" alt="" style="width:100%;height: 100vh;" >
+    </div>
+    <div class="header_part">
+        <div id="icn_nm">
+            <i class="fa-solid fa-truck-fast"></i>
+            <label for="" id="comp-nm">Transportz</label>
+        </div>
+        <div class="header_top">
+            <div class="header_items">
+                <div class="header_contact">
+                    <div>
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>(+91)7909633443</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>igtr5162@gmail.com</span>
+                    </div>
+                </div>
+                <div class="header_contact">
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span> <i class="fa-brands fa-square-x-twitter"></i></span>
+                    <span> <i class="fa-brands fa-square-google-plus"></i></span>
+                    <span> <i class="fa-brands fa-linkedin"></i></span>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Service</a></li>
+                    <li> <a href="">Shop</a></li>
+                    <li> <a href="">Company</a></li>
+                    <li> <a href="">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Phone_screen">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Sidebar Navbar -->
+        <nav class="navbar" id="navbar">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- JavaScript for Toggle Menu & Auto Close on Resize -->
+        <script>
+            function toggleMenu() {
+                const navbar = document.getElementById("navbar");
+                if (navbar.style.right === "0px") {
+                    navbar.style.right = "-250px";
+                } else {
+                    navbar.style.right = "0px";
+                }
+            }
+
+            // Close menu automatically when resizing to larger screen
+            window.addEventListener("resize", function () {
+                if (window.innerWidth > 800) {
+                    document.getElementById("navbar").style.right = "-250px";
+                }
+            });
+        </script>
+    </div>
+    <div class="overcolour"></div>
+    <div class="carousel-item-Active">
+        <div class="first_child-item">
+            <div class="sear-btn">
+                <div class="ic-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+                <button>Search</button>
+            </div>
+            <div>
+                <div class="start_hadding">
+                    <h2>Unbeatable</h2>
+                    <h2>trucking & Transport</h2>
+                    <h2>Services</h2>
+                </div>
+            </div>
+            <div class="Read_Get-btn">
+                <button>Read more &#8594</button>
+                <button style="background-color: rgb(111, 60, 9);color: aliceblue  ;">Get A Quote &#8594</button>
+            </div>
+        </div>
+        <img src="./Imga/faisal-khan-truck-xt-8x4-3d-model-max-obj-fbx-c4d-ma-removebg-preview (1).png  " alt=""
+            id="trak_img">
+
+    </div>
+    <div class="carousel-item">
+        <div class="first_child-item">
+            <div class="sear-btn">
+                <div class="ic-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+                <button>Search</button>
+            </div>
+            <div>
+                <div class="start_hadding">
+                    <h2>Fast & Secure</h2>
+                    <h2>Logistics Solutions</h2>
+                </div>
+            </div>
+            <div class="Read_Get-btn">
+                <button>Discover &#8594;</button>
+                <button style="background-color: rgb(111, 60, 9);color: aliceblue;">Contact Us &#8594;</button>
+            </div>
+        </div>
+        <img src="./Imga/track2.png" alt="" id="trak_img">
+    </div>
+    <div class="carousel-item">
+        <div class="first_child-item">
+            <div class="sear-btn">
+                <div class="ic-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text">
+                </div>
+                <button>Search</button>
+            </div>
+            <div>
+                <div class="start_hadding">
+                    <h2> Safe & Swift</h2>
+                    <h2>Transport Solutions</h2>
+                </div>
+            </div>
+            <div class="Read_Get-btn">
+                <button>Discover &#8594;</button>
+                <button style="background-color: rgb(111, 60, 9);color: aliceblue;">Contact Us &#8594;</button>
+            </div>
+        </div>
+        <img src="./Imga/—Pngtree—modern orange freight truck for_20036574.png" alt="" id="trak_img">
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()" id="control_btn-1"><i class="fa-solid fa-less-than"></i></button>
+        <button onclick="nextSlide()" id="control_btn-2"><i class="fa-solid fa-greater-than"></i></button>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".carousel-item, .carousel-item-Active");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? "flex" : "none";
+            });
+            currentIndex = index;
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(nextSlide, 3000);
+
+        // Initial Display
+        showSlide(currentIndex);
+
+    </script>
+
+
+    <!-- <------ Import Part Start Here ------ ? -->
+    <div  id="back-img">
+        <img src="./Imga/best-img-monu.png" alt="" >
+    </div>  
+        <div class="main-story">
+            <div class="all-vcl-op">
+                <div onclick="an_hidden()" id="only-po">
+                    <i class="ri-map-pin-line"></i>
+                    <label for="" style="cursor: pointer;">City:</label>
+                    <label for="" class="City-name" id="ch-city">Indore</label>
+                    <i class="ri-arrow-down-s-fill" style="cursor: pointer;"></i>
+                </div>
+                <div class="all-vehical-cmp">
+                    <a href="Home.html" class="vehicles">
+                        <img src="./Imga/—Pngtree—delivery rider on scooter_15515845.png" alt="" id="rent-truck">
+                        <label for="">Two Wheelers</label>
+                    </a>
+
+                    <a href="Home.html" class="vehicles">
+                        <img src="./Imga/delivery-truck-express-delivery-service-concept-online-delivery-service-home-product-goods-shipping-transport-deliveries-fast-service-van-with-cardboard-boxes_435184-122.jpg"
+                            alt="" id="bike">
+                        <label for="">Trucks</label>
+                    </a>
+                    <a href="Home.html" class="vehicles">
+                        <img src="./Imga/6184627-removebg-preview.png" id="bike" alt="">
+                        <label for="">Trucks Rent</label>
+                    </a>
+                    <div class="all-op" onclick="modal()">
+                        <span>Get an </span>
+                        <span>estimate</span>
+                        <span id="time-serivce">(takes ~2 mins)</span>
+                        <i class="fa-light fa-arrow-right-long"></i>
+                        <i class="ri-arrow-right-long-line"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="over-view" id="anhidden"></div>
+    <div style="border: 2px solid blue;">
+    <div class="hidden-text-part" id="an-hidde">
+        <div >
+            <div class="zone-mp">
+                <div id="hadding-mp">
+                    <h1 style="letter-spacing:0.2px;"> Transport Zone in Madhya Pradesh</h1>
+                    <h2>Choose your city</h2>
+                </div>
+                <div class="x-btn">
+                    <button id="close-btn">X</button>
+                </div>
+            </div>
+            <div class="MP-place">
+                <div class="Mp-City">
+                    <div class="city">
+                        <img src="./Imga/Gwalior-image.jpg" alt="" id="city-img">
+                        <h4>Gwalior</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/pachmari-MP.jpg" alt="" id="city-img">
+                        <h4>Pachmari</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/jabalpur-image.jpg" alt="" id="city-img" style="margin-top: 1rem;">
+                        <h4>Jabalpur</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/Rewa-image.jpg" alt="" id="city-img" style="margin-top: 1rem;">
+                        <h4>Rewa</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/dewas-image.jpg" alt="" id="city-img">
+                        <h4>Dewas</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/bhopal-image.jpg" alt="" id="city-img">
+                        <h4>Bhopal</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/main-picture-1.jpg" alt="" id="city-img">
+                        <h4>Indore</h4>
+                    </div>
+                    <div class="city">
+                        <img src="./Imga/ujjain-mahakal-jbba1kpmuexrqw4v.jpg" alt="" id="city-img">
+                        <h4>Ujjain</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="details-main-contain">
+        <div class="EstimateLayout_estimate-layout-container">
+            <div style="display: flex;flex-direction: column;">
+                <h2>Get an</h2>
+                <h2>Estimate</h2>
+            </div>
+            <div>
+                <p>
+                    Please fill in the details, so we can provide you with the best of our services
+                </p>
+            </div>
+        </div>
+        <div class="Transport-work">
+            <div>
+                <i class="ri-close-line" onclick="an_hidden2()"></i>
+            </div>
+            <div>
+
+                <div class="img-spn-gre">
+                    <div>
+                        <img src="./Imga/—Pngtree—delivery rider on scooter_15515845.png" alt="" id="again-two-wheeler">
+                    </div>
+                    <div>
+                        <span>Two Wheelers</span>
+                    </div>
+                    <div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img-spn-gre">
+                    <div>
+                        <img src="./Imga/delivery-truck-express-delivery-service-concept-online-delivery-service-home-product-goods-shipping-transport-deliveries-fast-service-van-with-cardboard-boxes_435184-122.jpg"
+                            alt="" id="again-two-wheeler">
+                    </div>
+                    <div>
+                        <span>Trucks</span>
+                    </div>
+                    <div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <div class="img-spn-gre">
+                    <div>
+                        <img src="./Imga/6184627-removebg-preview.png" alt="" id="again-two-wheeler">
+                    </div>
+                    <div>
+                        <span>Trucks Rent</span>
+                    </div>
+                    <div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function an_hidden() {
+            let hidden = document.getElementsByClassName("over-view")[0];
+            hidden.style.display = "block";
+            let view = document.getElementsByClassName("hidden-text-part")[0];
+            view.style.display = "flex";
+            // document.getElementById("an-hidde").style.display = "block";
+            // document.getElementById("an-hidde").style.backgroundColor = "block"
+        }
+        document.getElementById('close-btn').addEventListener('click', function () {
+            // window.location.href = "Mainwork.html";
+            document.querySelector(".hidden-text-part").style.display = "none"
+            document.querySelector(".over-view ").style.display = "none"
+
+
+        });
+
+        let citydata = document.getElementsByClassName("city");
+        console.log(citydata)
+
+        for (let i = 0; i < citydata.length; i++) {
+            let data = document.getElementsByTagName("h4")[i].innerHTML;
+            citydata[i].addEventListener("click", function () {
+                document.getElementById("ch-city").innerHTML = data;
+                document.querySelector(".hidden-text-part").style.display = "none"
+                document.querySelector(".over-view ").style.display = "none"
+            })
+
+        }
+
+        function modal() {
+            console.log("hi this is divyanshu patil ji")
+            let hidden = document.getElementsByClassName("over-view")[0];
+            hidden.style.display = "block";
+            let view = document.getElementsByClassName("details-main-contain")[0];
+            view.style.display = "flex";
+        }
+        function an_hidden2() {
+            document.querySelector(".details-main-contain").style.display = "none"
+            document.querySelector(".over-view ").style.display = "none"
+        }
+
+    </script>
+    <!--     form part         -->
+
+
+    <div class="bgd-img">
+        <img src="./service_part/transport-logistics-products.jpg" alt="">
+    </div>
+    <div class="Booking-part">
+        <div class="booking-in-set">
+            <div>
+                <h1> Booking Form</h1>
+            </div>
+            <div class="Partty-cmp">
+                <div class="in-cmp">
+                    <label for="">Partty Name</label>
+                    <input type="text">
+                </div>
+                <div class="in-cmp">
+                    <label for="">Company Address</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <label for="">GST NO</label>
+
+            </div>
+            <div class="input-bk">
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Mode</label>
+            </div>
+            <div class="input-bk">
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Number Parcel</label>
+            </div>
+            <div class="input-bk">
+                <input type="text">
+            </div>
+            <div>
+                <label for=""> Parcel wight</label>
+            </div>
+            <div class="input-bk">
+                <input type="text">
+            </div>
+            <div class="input-bk">
+                <label for="">Total Amount</label>
+            </div>
+            <div class="input-bk">
+                <input type="text">
+            </div>
+            <div class="booking-btn">
+                <button>Final Booking</button>
+            </div>
+        </div>
+        <div class="booking-in-set">
+            <div id="for-dispatch">
+                <h1> Dispatch Form</h1>
+            </div>
+
+            <div class="in-cmp">
+                <label for="">Partty Name</label>
+
+            </div>
+            <div class="input-bk-use">
+                <input type="text">
+            </div>
+            <div class="in-cmp">
+                <label for="">Company Address</label>
+            </div>
+            <div class="input-bk-use">
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="">GST NO</label>
+
+            </div>
+            <div class="input-bk-use">
+                <input type="text">
+            </div>
+            <div class="Payment-system">
+                <div>
+                    <label for="">Payment</label>
+                </div>
+                <div class="select-payment">
+                    <div class="Payment-type">
+                        <input type="radio" name="Payment">
+                        <label for="">Offline</label>
+                    </div>
+                    <div class="Payment-type">
+                        <input type="radio" name="Payment">
+                        <label for="">Online</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h1 style="border:10px solid red;margin-top: 110vh;">thisi s headers</h1> -->
+    <!--   Serivce Start -->
+    <!-- <div style="border: 1px solid red;;"> <h1>this headers</h1></div> -->
+    <div>
+        <div class="container-father">
+            <div class="container">
+                <div class="section-header">
+                    <div class="subtitle">OUR SERVICES</div>
+                    <h2 class="title">Logistics Special Services</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="./Imga/Parcel-hero-courier-scaled-e1710254637620.jpg" alt="Ocean Freight">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ff5722" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"></path>
+                                    <path d="M16 20H3"></path>
+                                    <path d="M16 16H7a2 2 0 1 0 0 4h9"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">EasyDrop Service</h3>
+                            <p class="service-desc">EasyDrop Service offers fast, reliable door-to-door delivery. We
+                                pick up
+                                from your location and deliver.</p>
+                            <a href="#" class="read-more">
+                                READ MORE
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="./Imga/Understanding-Full-Truck-Load-FTL-and-Part-Truck-Load-PTL-in-B2B-Logistics.jpg"
+                                alt="Air Freight">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ff5722" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">FastTrack Delivery</h3>
+                            <p class="service-desc">We promise fast, secure, and on-time deliveries every time.
+                                With our efficient process.</p>
+                            <a href="#" class="read-more">
+                                READ MORE
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="./Imga/less-than-truck-load-service.jpg" alt="Land Freight">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ff5722" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="1" y="3" width="15" height="13"></rect>
+                                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">CitySwift Transport</h3>
+                            <p class="service-desc">At CitySwift Transport, we specialize in providing quick, efficient,
+                                and
+                                on-time deliveries within the city.</p>
+                            <a href="#" class="read-more">
+                                READ MORE
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="./Imga/container-transport-service.jpg" alt="Railway Freight">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#ff5722" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                                    <path d="M9 4v16"></path>
+                                    <path d="M15 4v16"></path>
+                                    <path d="M4 9h16"></path>
+                                    <path d="M4 15h16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">SmartCart Shipping</h3>
+                            <p class="service-desc">SmartCart Shipping provides fast, reliable, and cost-effective
+                                shipping
+                                solutions for e-commerce businesses.</p>
+                            <a href="#" class="read-more">
+                                READ MORE
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add hover effect for service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.querySelector('.read-more').style.color = '#ff5722';
+                card.querySelector('.arrow').style.transform = 'translateX(3px)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.querySelector('.read-more').style.color = '#333';
+                card.querySelector('.arrow').style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+
+    <!-- Our Plan -->
+
+
+    <!-- <div class="container-process">
+       <div class="process-badge">OUR PROCESS</div>
+       <h1 class="heading">4 Easy Steps Plan Your Move</h1>
+       <div class="underline"></div>
+        <div class="steps-container">
+            Step 1 
+            <div class="step-card active" id="step1">
+                <div class="icon-container">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="peru" stroke-width="2">
+                        <path
+                            d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" />
+                        <path d="M9 12L11 14L15 10" />
+                    </svg>
+                </div>
+                <div class="step-number-title">
+                    <div class="step-number">01.</div>
+                    <h2 class="step-title">Plan</h2>
+                </div>
+                <p class="step-description">Use our planning timeline and moving tips to prepare for a smooth move.</p>
+                <a href="#" class="step-link">
+                    Go to Plan
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                    </svg>
+                </a>
+
+                <svg class="arrow-connector" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ccc"
+                    stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                </svg>
+            </div>
+
+             Step 2
+            <div class="step-card" id="step2">
+                <div class="icon-container">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="peru" stroke-width="2">
+                        <path
+                            d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" />
+                        <path d="M3.27002 6.96002L12 12.01L20.73 6.96002" />
+                        <path d="M12 22.08V12" />
+                    </svg>
+                </div>
+                <div class="step-number-title">
+                    <div class="step-number">02.</div>
+                    <h2 class="step-title">Pack</h2>
+                </div>
+                <p class="step-description">Use our planning timeline and moving tips to prepare for a smooth move.</p>
+                <a href="#" class="step-link">
+                    Go to Pack
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                    </svg>
+                </a>
+
+                <svg class="arrow-connector" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ccc"
+                    stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                </svg>
+            </div>
+
+             Step 3 
+            <div class="step-card" id="step3">
+                <div class="icon-container">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="peru" stroke-width="2">
+                        <path
+                            d="M9 7H7C5.89543 7 5 7.89543 5 9V18C5 19.1046 5.89543 20 7 20H17C18.1046 20 19 19.1046 19 18V9C19 7.89543 18.1046 7 17 7H15M9 7V5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7M9 7H15" />
+                    </svg>
+                </div>
+                <div class="step-number-title">
+                    <div class="step-number">03.</div>
+                    <h2 class="step-title">Load</h2>
+                </div>
+                <p class="step-description">Use our planning timeline and moving tips to prepare for a smooth move.</p>
+                <a href="#" class="step-link">
+                    Go to Load
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                    </svg>
+                </a>
+
+                <svg class="arrow-connector" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ccc"
+                    stroke-width="2">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                </svg>
+            </div>
+
+             Step 4
+            <div class="step-card" id="step4">
+                <div class="icon-container">
+                    <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="peru" stroke-width="2">
+                        <path d="M16 3H1V16H16V3Z" />
+                        <path d="M16 8H20L23 11V16H16V8Z" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" />
+                    </svg>
+                </div>
+                <div class="step-number-title">
+                    <div class="step-number">04.</div>
+                    <h2 class="step-title">Delivery</h2>
+                </div>
+                <p class="step-description">Use our planning timeline and moving tips to prepare for a smooth move.</p>
+                <a href="#" class="step-link">
+                    Go to Delivery
+                    <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>  -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stepCards = document.querySelectorAll('.step-card');
+
+            stepCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    // Remove active class from all cards
+                    stepCards.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked card
+                    card.classList.add('active');
+                });
+
+                // Hover effect for the arrow icon
+                const stepLink = card.querySelector('.step-link');
+                const arrowIcon = stepLink.querySelector('.arrow-icon');
+
+                stepLink.addEventListener('mouseenter', () => {
+                    arrowIcon.style.transform = 'translateX(4px)';
+                });
+
+                stepLink.addEventListener('mouseleave', () => {
+                    arrowIcon.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+
+   <!-- location  -->
+     <div class="Contact_Set">
+        <div id="Contact_block"></div>
+        <div class="Contact_text">
+            <span>Our Location</span>
+        </div>
+    </div>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14406.757935242995!2d75.68129564471863!3d22.615263227189427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1744709749226!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0; margin-top: 1rem;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+     <!-- Allhour work -->
+     <div style="display: flex;flex-direction: column;justify-content: space-evenly;">
+        <div id="speci-img" style="border:1px solid red;">
+            <img src="./Imga/dynamic-abstract-fluid-geometric-colorful-gradient-orange-shape-background-eps-10-vector.jpg"
+                alt=""> 
+        </div>
+        <div class="all-hourse-soluction" style="border:1px solid blue"> 
+
+
+            <div class="all-time-text" >
+                <div class="all-text-24" >
+                    <label for="" id="sp-txt">24/7 Custormer Support any time</label>
+                    <label for="" id="sp-txt">of the day or right</label>
+                    <label for="" style="letter-spacing: 0.2px;">Custormer can get help and find anuswer to questions as
+                        soon</label>
+                </div>
+                <div class="Re-Con-btn">
+                    <button id="Con-btn-1">Request a Quote</button>
+                    <button id="Con-btn-2">Contact Us</button>
+                </div>
+            </div>
+            <img src="./Imga/forklift-loading-pallet-boxes-into-lorry-truck-vector-35146810-removebg-preview.png" alt=""
+                id="truck-lorry">
+        </div>
+     </div>
+
+    <!-- <footer>
+        <div class="footer_start">
+            <div class="start_section_1">
+                <div class="logoname_ic">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <label for="">Transportz</label>
+                </div>
+                <div class="pr_company">
+                    <p> Online Booking System Users can book transport services easily.
+                        Multiple Transport Options Supports buses, taxis, and private vehicles.</p>
+                </div>
+                <div class="social-Media">
+                    <span><i class="fa-brands fa-facebook "></i></span>
+                    <span> <i class="fa-brands fa-square-x-twitter"></i></span>
+                    <span> <i class="fa-brands fa-square-google-plus"></i></span>
+                    <span> <i class="fa-brands fa-linkedin"></i></span>
+                </div>
+            </div>
+            <div class="start_section_2">
+                <label id="footer_address">Address</label>
+                <div>
+                    <p>
+                        Healing Center, 176 W Street <br>
+                        name, New York, NY 10014, US
+                    </p>
+                </div>
+                <div class="content_Us">
+                    <label for="">(+91)7909633443</label>
+                    <label for="">(+91)9759633443</label>
+                </div>
+                <div>
+                    <a href="" id="Company_gml">transportz@gmail.com</a>
+                </div>
+
+
+            </div>
+            <div class="footer_links">
+                <div>
+                    <label for="">Links</label>
+                </div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="more_update">
+                <form action="" class="new_data">
+                    <label for=""
+                        style="color: rgb(0, 0, 0);font-family:sans-serif;font-weight: bold;">Newsletter</label>
+                    <div>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div id="Subscribe-btn">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+        </div>
+
+    </footer> -->
+
+
+</body>
+
+</html>

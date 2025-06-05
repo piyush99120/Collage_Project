@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transport Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/Login-form.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <button class="back-btn" onclick="goBack()" title="Back button">←</button>
+    <div class="img_box">
+      <!-- <img src="./HTMl/Imga/Wallpaper_IAA_Range_desktop.jpg" id="first"> -->
+    </div>
+
+    <div class="main">
+      <div class="img_part">
+        <img
+          src="https://shiptli.com/wp-content/uploads/2023/11/Shipper-Technology.png"
+          id="in_img"
+        />
+      </div>
+
+      <form action="#" class="formpage" method="POST">
+        <div class="fill_up">
+          <div class="input_section">
+            <div>
+              <h3 id="account">Create an account</h3>
+            </div>
+
+            <div>
+              <label for="name">Full name</label>
+              <input type="text" id="name" placeholder=" Your name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder=" Your email"
+                required
+              />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder=" Your password"
+                  required
+                />
+                <i
+                  class="fas fa-eye-slash password-toggle"
+                  onclick="togglePassword()"
+                ></i>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+          <div class="brands_icon">
+            <div>
+              <span><i class="fa-brands fa-apple"></i></span>
+              <a href="">Apple</a>
+            </div>
+            <div>
+              <span><i class="fa-brands fa-google"></i></span>
+              <a href="">Google</a>
+            </div>
+          </div>
+          <div class="Terms">
+            <div>
+              <span>Have any account? <a href="">Sign in</a></span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="../CSS/Login-page.js"></script>
+  </body>
+</html>
